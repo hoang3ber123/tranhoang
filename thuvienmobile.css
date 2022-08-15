@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+header a{
+    font-size: 30px;
+    padding: auto;
+    color: blue;
+    display: block;
+}
+section{
+    width: 100%;
+}
+nav li{
+    width: 99%;
+    border-right: none;
+}
+
+nav ul{
+    width: 99%;
+    display: block ;
+}
+aside{
+    display: none;
+}
+div.product {
+    width: 45%;
+}
