@@ -1,0 +1,228 @@
+body{
+    margin: 0%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://img.freepik.com/premium-vector/cute-autumn-background_174282-33.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+@font-face {
+    font-family: title;
+    src: url("font/Nabila.ttf");
+}
+@font-face {
+    font-family: slogan;
+    src: url("font/Pacifico-Regular.ttf");
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-image: url("https://cdn.dribbble.com/users/438226/screenshots/16695232/media/145ec731468579d04291d11c4c389c65.png?compress=1&resize=400x300&vertical=top");
+    box-shadow: 3px 3px 3px gray ;
+}
+header h1{
+    margin: 0;
+    color: white;
+    font-family: title;
+}
+header h1::after{
+    content: "";
+    height: 2px;
+    width: 40%;
+    background-color: white;
+    display: block;
+    position: absolute;
+    left: 30%;
+}
+header h3{
+    font-family: slogan;
+    color: white;
+    font-family: title;
+}
+nav{
+    background-color: #404042;
+    position: fixed;
+    top: 200px;
+    right: 3px;
+    border-radius: 20px 20px;
+    z-index: 999;
+}
+ul.mainMenu{
+    font-size: 30px;
+    margin: 0;
+    width: 100%;
+    padding: 5px ;
+}
+ul.mainMenu li{
+    width: 100%;
+}
+ul.mainMenu a{
+    width: 100%;
+    display: block;
+    color: #e1b12c;
+}
+ul.subMenu input{
+    color:  #e1b12c;
+    width: 90%;
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px 10px;
+    background-color: #74b9ff;
+}
+div#backtop{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #e1b12c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 99999999999;
+}
+.flex{
+    display: flex;
+}
+section img{
+   
+    transform: skew(0deg,0deg);
+    transition: 1s ease;
+}
+section img:hover{
+    transform: skew(0deg,5deg);
+}
+ img#mainImage:hover{
+    transform: skew(0deg,0deg);
+}
+div.new{
+    width: 70%;
+    position: relative;
+    background-color: white;
+}
+div.new ul{
+    padding: 0;
+    background-color: black;
+}
+div.new img{
+    width: 100%;
+    height: 400px;
+}
+div.next{
+    background-color: gray;
+    font-size: 100px;
+    position: absolute;
+    display: block;
+    top: 30%;
+    right: 0%;
+    opacity: 0.3;
+}
+div.pre{
+    background-color: gray;
+    font-size: 100px;
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 0%;
+    opacity: 0.3;
+}
+section{
+    width: 80%;
+    margin: 40px 10px 50px;
+}
+section >div{
+    width: 100%;
+    box-sizing: border-box;
+}
+div.ads{
+    width: 30%;
+    height: 400px;
+    background-color: orange;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+h1.subject >span{
+    display: block;
+    width: 30%;
+    background-color: #e1b12c;
+    color: white;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    font-size: 30px;
+    font-family: slogan;
+}
+h1.subject::after{
+    content: "";
+    background-color: #e1b12c;
+    width: 100%;
+    height: 10px;
+    display: block;
+}
+div.products{
+    flex-wrap: wrap;
+}
+div.product img{
+    width: 100%;
+}
+div.product {
+    padding: 10px;
+    width: 20%;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-weight: bolder;
+}
+.product a{
+    color: black;
+}
+footer{
+    width: 100% ;
+    background-color: #fff200;
+    opacity: 0.7;
+    position: relative;
+}
+footer >div >div:first-child{
+    width: 70%;
+    padding: 4px 30px;
+    font-size: large;
+}
+footer>div >div:nth-child(2){
+    width: 30%;
+    font-size: large;
+}
+div.upDown{
+    width: 40%;
+    margin-top: 0;
+    height: 50px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 40px;
+    background-color:#fff200 ;
+    opacity: 0.7;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+}
+div.upDown i{
+    padding: 0;
+    animation: upDown 1s ease infinite;
+    position: absolute;
+}
+@keyframes upDown {
+    from{
+        padding-top: 0;
+    }
+    to{
+        padding-top: 10px;
+    }
+}
