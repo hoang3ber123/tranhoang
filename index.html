@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="thuvien.css">
+    <link rel="stylesheet" href="thuvien3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="thuvienmobile.css" media="screen and (max-width:500px)">
-    <script src="thuvien.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="thuvien3.js"></script>
     <title>Document</title>
 </head>
-<body onload="init()" class="">
+<body>
     <header >
-        <h1> <a href="##"><h1>Thư viện</h1></a> </h1>
+        <h1> <a href="##"><h1>HoangTranLibary</h1></a> </h1>
+        <h3 class="slogan" >Sách là người bạn đồng hành của mọi người</h3>
     </header>
+    <div id="backtop"> <i class="fa-solid fa-arrow-up"></i> </div>
     <nav>
         <div class="menu">
-            <ul >
-                <li><a href="##"><i class="fa-solid fa-bars"></i>Danh mục</a>
-                <ul class="submenu block" >
-                    <li><a href="##">Sách giáo khoa</a></li>
-                    <li><a href="##">Truyện</a></li>
-                    <li><a href="##">Sách tôn giáo</a></li>
-                    <li><a href="##">Sách chính trị</a></li>
-                </ul>
-                </li class="list">
-                <li><a href="#bestSold"><i class="fa-solid fa-swatchbook"></i>Sách bán chạy</a></li>
-                <li><a href="#mostRead"><i class="fa-solid fa-eyes"></i>Đọc nhiều nhất</a></li>
-                <li><a href="#"><i class="fa-solid fa-user-pen"></i>Tác giả</a></li>
-                <li><a href="#"><i class="fa-solid fa-book-blank"></i>Tác phẩm</a></li>
+            <ul class="mainMenu">
+                <li> 
+                    <a href="##"><i class="fa-solid fa-bars"></i>Danh mục</a>
+                    <ul class="subMenu"  style="text-align: left;">
+                        <li><a href="#mostRead">Đọc Nhiều nhất</a></li>
+                        <li><a href="#bestSold">Bán chạy</a></li>
+                        <li><a href="##">Tác giả</a></li>
+                        <li><a href="##">Tác phẩm</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="##"><i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm</a>
+                    <ul class="subMenu" >
+                        <li><input type="text" placeholder="Tìm sách ...."></li>
+                    </ul>
+                </li>
+                <li> 
+                    <a href="##"><i class="fa-solid fa-id-card"></i>Liên hệ</a>
+                    <ul class="subMenu" >
+                        <li><a href="##"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="##"><i class="fa-brands fa-google"></i></a></li>
+                        <li><a href="##"><i class="fa-brands fa-discord"></i></a></li>
+                        <li><a href="##"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
-    <aside class="contact">
-        <div>
-        <ul >
-            <li> <a href="#"><img src="https://github.com/hoang3ber123/tranhoang/blob/main/discord-logo-png-32875.png" alt="facebook"></a> </li>
-            <li> <a href="#"><img src="https://github.com/hoang3ber123/tranhoang/blob/main/pngfind.com-twitter-icon-png-606593.png" alt="facebook"></a> </li>
-            <li> <a href="#"><img src="https://github.com/hoang3ber123/tranhoang/blob/main/imgbin_social-media-instagram-login-photography-png.png" alt="facebook"></a> </li>
-            <li> <a href="#"><img src="https://github.com/hoang3ber123/tranhoang/blob/main/facebook.png" alt="facebook"></a> </li>
-        </ul>
-    </div>
-    </aside>
     <section >
         <div>
             <h1 class="subject"><span>Tin tức mới nhất</span></h1>
@@ -154,12 +159,26 @@
             </div>
         </div>
     </section>
-    <footer>
-        <pre>
-            Địa chỉ:brookerhill 29 st 
-            Số điện thoại 0999999999
-            email:thuvien@gmail.com
-        </pre>
+    <div>
+        <div class="upDown">
+            <i class="fa-solid fa-angles-down"></i>
+        </div>
+    </div>
+    <footer >
+        <div class="flex">
+            <div>
+                <p><h1>information</h1></p>
+                <p>Email: <br><a href="##">2151053021hoang@ou.edu.vn</a> </p>
+                <p>Số diện thoại:090xxxxxx</p>
+                <p>Địa chỉ:Wall St,102,Washington DC</p>
+            </div>
+            <div>
+                <p><h1>Đăng Nhập</h1></p>
+                <p>Tài Khoản <input type="text" name="user" placeholder="VD:Haha123"></p>
+                <p>Mật khẩu <input type="password" name="pasword" placeholder="****"></p>
+                <p><button type="submit" >Đăng nhập</button></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
