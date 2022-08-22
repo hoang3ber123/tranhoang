@@ -1,32 +1,44 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    background-size: 0;
+    position: relative;
 }
-header {
+
+header h1{
+    font-size: 2rem;
+}
+ul.mainMenu{
+    font-size: 20px;
     margin: 0;
-    padding: 0;
-    width: auto;
+    width: 100%;
+    padding: 5px;
 }
-header a{
-    font-size: 30px;
-    padding: auto;
-    color: blue;
-    display: block;
+nav{
+    position: absolute;
+    top: 134px;
+    left: 0;
+    right: 0;
 }
 section{
     width: 100%;
+    margin: 100px 0px 0px 0px !important;
 }
-nav li{
-    width: 99%;
-    border-right: none;
+section >div{
+    width: 100%;
 }
-
-nav ul{
-    width: 99%;
-    display: block ;
+h1.subject >span{
+    width: 60%;
+    font-size: 20px;
 }
-aside{
-    display: none;
+div.product{
+    width: 50%;
 }
-div.product {
-    width: 45%;
+footer h1{
+    font-size: 30px;
+}
+footer >div >div{
+    padding: 0 !important;
+    width: 50% !important;
+    font-size: 20px;
+    margin: 0;
+    overflow-x: scroll;
 }
